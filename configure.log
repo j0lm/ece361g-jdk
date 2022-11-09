@@ -1,0 +1,625 @@
+configure: Configuration created at Tue Nov  8 18:24:02 CST 2022.
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for file... /usr/bin/file
+checking for ldd... /usr/bin/ldd
+checking for bash... /usr/bin/bash
+checking for cat... /usr/bin/cat
+checking for chmod... /usr/bin/chmod
+checking for cp... /usr/bin/cp
+checking for cut... /usr/bin/cut
+checking for date... /usr/bin/date
+checking for gdiff... [not found]
+checking for diff... /usr/bin/diff
+checking for echo... echo [builtin]
+checking for expr... /usr/bin/expr
+checking for find... /usr/bin/find
+checking for gunzip... /usr/bin/gunzip
+checking for pigz... [not found]
+checking for gzip... /usr/bin/gzip
+checking for head... /usr/bin/head
+checking for ln... /usr/bin/ln
+checking for ls... /usr/bin/ls
+checking for gmkdir... [not found]
+checking for mkdir... /usr/bin/mkdir
+checking for mktemp... /usr/bin/mktemp
+checking for mv... /usr/bin/mv
+checking for gawk... /usr/bin/gawk
+checking for printf... printf [builtin]
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for sh... /usr/bin/sh
+checking for sort... /usr/bin/sort
+checking for tail... /usr/bin/tail
+checking for gtar... [not found]
+checking for tar... /usr/bin/tar
+checking for tee... /usr/bin/tee
+checking for touch... /usr/bin/touch
+checking for tr... /usr/bin/tr
+checking for uname... /usr/bin/uname
+checking for wc... /usr/bin/wc
+checking for xargs... /usr/bin/xargs
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for df... /usr/bin/df
+checking for git... /usr/bin/git
+checking for nice... /usr/bin/nice
+checking for greadlink... [not found]
+checking for readlink... /usr/bin/readlink
+checking for cygpath... [not found]
+checking for wslpath... /usr/bin/wslpath
+checking for lsb_release... /usr/bin/lsb_release
+checking for cmd.exe... /mnt/c/Windows/System32/cmd.exe
+checking for cmp... /usr/bin/cmp
+checking for uniq... /usr/bin/uniq
+checking build system type... x86_64-pc-wsl
+checking host system type... x86_64-pc-wsl
+checking target system type... x86_64-pc-wsl
+checking openjdk-build os-cpu... windows-x86_64
+checking openjdk-target os-cpu... windows-x86_64
+checking compilation type... native
+checking Windows environment type... wsl1
+checking wsl1 drive prefix... '/mnt'
+checking wsl1 root directory as Windows path... '[unavailable]'
+checking wsl1 temp directory... /mnt/c/Users/JoseO/AppData/Local/Temp
+checking wsl1 release... 4.4.0-19041-Microsoft
+checking wsl1 version... #1237-Microsoft Sat Sep 11 14:32:00 PST 2021
+checking Windows version... 10.0.19043.2251
+checking wsl distribution... Ubuntu 20.04.5 LTS
+checking what kind of 'find' is first on the PATH... unix style
+checking for top-level directory... /mnt/c/users/joseo/desktop/ece361g-jdk
+checking if custom source is suppressed (openjdk-only)... disabled, default
+checking for --enable-debug... disabled, default
+checking which debug level to use... release
+checking which variants of the JVM to build... server
+checking if absolute paths should be allowed in the build output... no, release build
+checking for sysroot... 
+checking for toolchain path... 
+checking for extra path... 
+checking where to store configuration... in default location
+checking what configuration name to use... windows-x86_64-server-release
+/usr/bin/chmod: changing permissions of '/mnt/c/users/joseo/desktop/ece361g-jdk/build/windows-x86_64-server-release/fixpath': Operation not permitted
+checking for zypper... [not found]
+checking for apt-get... /usr/bin/apt-get
+checking for pandoc... [not found]
+checking for gmake... [not found]
+checking for make... [not found]
+configure: error: Cannot find GNU make 3.81 or newer! Please put it in the path, or add e.g. MAKE=/opt/gmake3.81/make as argument to configure.
+configure: Configuration created at Tue Nov  8 18:30:08 CST 2022.
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for file... /usr/bin/file
+checking for ldd... /usr/bin/ldd
+checking for bash... /usr/bin/bash
+checking for cat... /usr/bin/cat
+checking for chmod... /usr/bin/chmod
+checking for cp... /usr/bin/cp
+checking for cut... /usr/bin/cut
+checking for date... /usr/bin/date
+checking for gdiff... [not found]
+checking for diff... /usr/bin/diff
+checking for echo... echo [builtin]
+checking for expr... /usr/bin/expr
+checking for find... /usr/bin/find
+checking for gunzip... /usr/bin/gunzip
+checking for pigz... [not found]
+checking for gzip... /usr/bin/gzip
+checking for head... /usr/bin/head
+checking for ln... /usr/bin/ln
+checking for ls... /usr/bin/ls
+checking for gmkdir... [not found]
+checking for mkdir... /usr/bin/mkdir
+checking for mktemp... /usr/bin/mktemp
+checking for mv... /usr/bin/mv
+checking for gawk... /usr/bin/gawk
+checking for printf... printf [builtin]
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for sh... /usr/bin/sh
+checking for sort... /usr/bin/sort
+checking for tail... /usr/bin/tail
+checking for gtar... [not found]
+checking for tar... /usr/bin/tar
+checking for tee... /usr/bin/tee
+checking for touch... /usr/bin/touch
+checking for tr... /usr/bin/tr
+checking for uname... /usr/bin/uname
+checking for wc... /usr/bin/wc
+checking for xargs... /usr/bin/xargs
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for df... /usr/bin/df
+checking for git... /usr/bin/git
+checking for nice... /usr/bin/nice
+checking for greadlink... [not found]
+checking for readlink... /usr/bin/readlink
+checking for cygpath... [not found]
+checking for wslpath... /usr/bin/wslpath
+checking for lsb_release... /usr/bin/lsb_release
+checking for cmd.exe... /mnt/c/Windows/System32/cmd.exe
+checking for cmp... /usr/bin/cmp
+checking for uniq... /usr/bin/uniq
+checking build system type... x86_64-pc-wsl
+checking host system type... x86_64-pc-wsl
+checking target system type... x86_64-pc-wsl
+checking openjdk-build os-cpu... windows-x86_64
+checking openjdk-target os-cpu... windows-x86_64
+checking compilation type... native
+checking Windows environment type... wsl1
+checking wsl1 drive prefix... '/mnt'
+checking wsl1 root directory as Windows path... '[unavailable]'
+checking wsl1 temp directory... /mnt/c/Users/JoseO/AppData/Local/Temp
+checking wsl1 release... 4.4.0-19041-Microsoft
+checking wsl1 version... #1237-Microsoft Sat Sep 11 14:32:00 PST 2021
+checking Windows version... 10.0.19043.2251
+checking wsl distribution... Ubuntu 20.04.5 LTS
+checking what kind of 'find' is first on the PATH... unix style
+checking for top-level directory... /mnt/c/users/joseo/desktop/ece361g-jdk
+checking if custom source is suppressed (openjdk-only)... disabled, default
+checking for --enable-debug... disabled, default
+checking which debug level to use... release
+checking which variants of the JVM to build... server
+checking if absolute paths should be allowed in the build output... no, release build
+checking for sysroot... 
+checking for toolchain path... 
+checking for extra path... 
+checking where to store configuration... in default location
+checking what configuration name to use... windows-x86_64-server-release
+/usr/bin/chmod: changing permissions of '/mnt/c/users/joseo/desktop/ece361g-jdk/build/windows-x86_64-server-release/fixpath': Operation not permitted
+checking for zypper... [not found]
+checking for apt-get... /usr/bin/apt-get
+checking for pandoc... [not found]
+checking for gmake... [not found]
+checking for make... /usr/bin/make
+configure: Testing potential make at /usr/bin/make, found using make in PATH
+configure: Using GNU make at /usr/bin/make (version: GNU Make 4.2.1)
+checking if make --output-sync is supported... yes
+checking for make --output-sync value... none, default
+checking if find supports -delete... yes
+checking what type of tar was found... gnu
+checking that grep (/usr/bin/grep) -Fx handles empty lines in the pattern list correctly... yes
+checking for unzip... [not found]
+configure: error: Could not find required tool for UNZIP
+configure: Configuration created at Tue Nov  8 18:31:29 CST 2022.
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for file... /usr/bin/file
+checking for ldd... /usr/bin/ldd
+checking for bash... /usr/bin/bash
+checking for cat... /usr/bin/cat
+checking for chmod... /usr/bin/chmod
+checking for cp... /usr/bin/cp
+checking for cut... /usr/bin/cut
+checking for date... /usr/bin/date
+checking for gdiff... [not found]
+checking for diff... /usr/bin/diff
+checking for echo... echo [builtin]
+checking for expr... /usr/bin/expr
+checking for find... /usr/bin/find
+checking for gunzip... /usr/bin/gunzip
+checking for pigz... [not found]
+checking for gzip... /usr/bin/gzip
+checking for head... /usr/bin/head
+checking for ln... /usr/bin/ln
+checking for ls... /usr/bin/ls
+checking for gmkdir... [not found]
+checking for mkdir... /usr/bin/mkdir
+checking for mktemp... /usr/bin/mktemp
+checking for mv... /usr/bin/mv
+checking for gawk... /usr/bin/gawk
+checking for printf... printf [builtin]
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for sh... /usr/bin/sh
+checking for sort... /usr/bin/sort
+checking for tail... /usr/bin/tail
+checking for gtar... [not found]
+checking for tar... /usr/bin/tar
+checking for tee... /usr/bin/tee
+checking for touch... /usr/bin/touch
+checking for tr... /usr/bin/tr
+checking for uname... /usr/bin/uname
+checking for wc... /usr/bin/wc
+checking for xargs... /usr/bin/xargs
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for df... /usr/bin/df
+checking for git... /usr/bin/git
+checking for nice... /usr/bin/nice
+checking for greadlink... [not found]
+checking for readlink... /usr/bin/readlink
+checking for cygpath... [not found]
+checking for wslpath... /usr/bin/wslpath
+checking for lsb_release... /usr/bin/lsb_release
+checking for cmd.exe... /mnt/c/Windows/System32/cmd.exe
+checking for cmp... /usr/bin/cmp
+checking for uniq... /usr/bin/uniq
+checking build system type... x86_64-pc-wsl
+checking host system type... x86_64-pc-wsl
+checking target system type... x86_64-pc-wsl
+checking openjdk-build os-cpu... windows-x86_64
+checking openjdk-target os-cpu... windows-x86_64
+checking compilation type... native
+checking Windows environment type... wsl1
+checking wsl1 drive prefix... '/mnt'
+checking wsl1 root directory as Windows path... '[unavailable]'
+checking wsl1 temp directory... /mnt/c/Users/JoseO/AppData/Local/Temp
+checking wsl1 release... 4.4.0-19041-Microsoft
+checking wsl1 version... #1237-Microsoft Sat Sep 11 14:32:00 PST 2021
+checking Windows version... 10.0.19043.2251
+checking wsl distribution... Ubuntu 20.04.5 LTS
+checking what kind of 'find' is first on the PATH... unix style
+checking for top-level directory... /mnt/c/users/joseo/desktop/ece361g-jdk
+checking if custom source is suppressed (openjdk-only)... disabled, default
+checking for --enable-debug... disabled, default
+checking which debug level to use... release
+checking which variants of the JVM to build... server
+checking if absolute paths should be allowed in the build output... no, release build
+checking for sysroot... 
+checking for toolchain path... 
+checking for extra path... 
+checking where to store configuration... in default location
+checking what configuration name to use... windows-x86_64-server-release
+/usr/bin/chmod: changing permissions of '/mnt/c/users/joseo/desktop/ece361g-jdk/build/windows-x86_64-server-release/fixpath': Operation not permitted
+checking for zypper... [not found]
+checking for apt-get... /usr/bin/apt-get
+checking for pandoc... [not found]
+checking for gmake... [not found]
+checking for make... /usr/bin/make
+configure: Testing potential make at /usr/bin/make, found using make in PATH
+configure: Using GNU make at /usr/bin/make (version: GNU Make 4.2.1)
+checking if make --output-sync is supported... yes
+checking for make --output-sync value... none, default
+checking if find supports -delete... yes
+checking what type of tar was found... gnu
+checking that grep (/usr/bin/grep) -Fx handles empty lines in the pattern list correctly... yes
+checking for unzip... /usr/bin/unzip
+checking for zip... [not found]
+configure: error: Could not find required tool for ZIPEXE
+configure: Configuration created at Tue Nov  8 18:34:43 CST 2022.
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for file... /usr/bin/file
+checking for ldd... /usr/bin/ldd
+checking for bash... /usr/bin/bash
+checking for cat... /usr/bin/cat
+checking for chmod... /usr/bin/chmod
+checking for cp... /usr/bin/cp
+checking for cut... /usr/bin/cut
+checking for date... /usr/bin/date
+checking for gdiff... [not found]
+checking for diff... /usr/bin/diff
+checking for echo... echo [builtin]
+checking for expr... /usr/bin/expr
+checking for find... /usr/bin/find
+checking for gunzip... /usr/bin/gunzip
+checking for pigz... [not found]
+checking for gzip... /usr/bin/gzip
+checking for head... /usr/bin/head
+checking for ln... /usr/bin/ln
+checking for ls... /usr/bin/ls
+checking for gmkdir... [not found]
+checking for mkdir... /usr/bin/mkdir
+checking for mktemp... /usr/bin/mktemp
+checking for mv... /usr/bin/mv
+checking for gawk... /usr/bin/gawk
+checking for printf... printf [builtin]
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for sh... /usr/bin/sh
+checking for sort... /usr/bin/sort
+checking for tail... /usr/bin/tail
+checking for gtar... [not found]
+checking for tar... /usr/bin/tar
+checking for tee... /usr/bin/tee
+checking for touch... /usr/bin/touch
+checking for tr... /usr/bin/tr
+checking for uname... /usr/bin/uname
+checking for wc... /usr/bin/wc
+checking for xargs... /usr/bin/xargs
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for df... /usr/bin/df
+checking for git... /usr/bin/git
+checking for nice... /usr/bin/nice
+checking for greadlink... [not found]
+checking for readlink... /usr/bin/readlink
+checking for cygpath... [not found]
+checking for wslpath... /usr/bin/wslpath
+checking for lsb_release... /usr/bin/lsb_release
+checking for cmd.exe... /mnt/c/Windows/System32/cmd.exe
+checking for cmp... /usr/bin/cmp
+checking for uniq... /usr/bin/uniq
+checking build system type... x86_64-pc-wsl
+checking host system type... x86_64-pc-wsl
+checking target system type... x86_64-pc-wsl
+checking openjdk-build os-cpu... windows-x86_64
+checking openjdk-target os-cpu... windows-x86_64
+checking compilation type... native
+checking Windows environment type... wsl1
+checking wsl1 drive prefix... '/mnt'
+checking wsl1 root directory as Windows path... '[unavailable]'
+checking wsl1 temp directory... /mnt/c/Users/JoseO/AppData/Local/Temp
+checking wsl1 release... 4.4.0-19041-Microsoft
+checking wsl1 version... #1237-Microsoft Sat Sep 11 14:32:00 PST 2021
+checking Windows version... 10.0.19043.2251
+checking wsl distribution... Ubuntu 20.04.5 LTS
+checking what kind of 'find' is first on the PATH... unix style
+checking for top-level directory... /mnt/c/users/joseo/desktop/ece361g-jdk
+checking if custom source is suppressed (openjdk-only)... disabled, default
+checking for --enable-debug... disabled, default
+checking which debug level to use... release
+checking which variants of the JVM to build... server
+checking if absolute paths should be allowed in the build output... no, release build
+checking for sysroot... 
+checking for toolchain path... 
+checking for extra path... 
+checking where to store configuration... in default location
+checking what configuration name to use... windows-x86_64-server-release
+/usr/bin/chmod: changing permissions of '/mnt/c/users/joseo/desktop/ece361g-jdk/build/windows-x86_64-server-release/fixpath': Operation not permitted
+checking for zypper... [not found]
+checking for apt-get... /usr/bin/apt-get
+checking for pandoc... [not found]
+checking for gmake... [not found]
+checking for make... /usr/bin/make
+configure: Testing potential make at /usr/bin/make, found using make in PATH
+configure: Using GNU make at /usr/bin/make (version: GNU Make 4.2.1)
+checking if make --output-sync is supported... yes
+checking for make --output-sync value... none, default
+checking if find supports -delete... yes
+checking what type of tar was found... gnu
+checking that grep (/usr/bin/grep) -Fx handles empty lines in the pattern list correctly... yes
+checking for unzip... /usr/bin/unzip
+checking for zip... [not found]
+configure: error: Could not find required tool for ZIPEXE
+configure: Configuration created at Tue Nov  8 18:35:30 CST 2022.
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for file... /usr/bin/file
+checking for ldd... /usr/bin/ldd
+checking for bash... /usr/bin/bash
+checking for cat... /usr/bin/cat
+checking for chmod... /usr/bin/chmod
+checking for cp... /usr/bin/cp
+checking for cut... /usr/bin/cut
+checking for date... /usr/bin/date
+checking for gdiff... [not found]
+checking for diff... /usr/bin/diff
+checking for echo... echo [builtin]
+checking for expr... /usr/bin/expr
+checking for find... /usr/bin/find
+checking for gunzip... /usr/bin/gunzip
+checking for pigz... [not found]
+checking for gzip... /usr/bin/gzip
+checking for head... /usr/bin/head
+checking for ln... /usr/bin/ln
+checking for ls... /usr/bin/ls
+checking for gmkdir... [not found]
+checking for mkdir... /usr/bin/mkdir
+checking for mktemp... /usr/bin/mktemp
+checking for mv... /usr/bin/mv
+checking for gawk... /usr/bin/gawk
+checking for printf... printf [builtin]
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for sh... /usr/bin/sh
+checking for sort... /usr/bin/sort
+checking for tail... /usr/bin/tail
+checking for gtar... [not found]
+checking for tar... /usr/bin/tar
+checking for tee... /usr/bin/tee
+checking for touch... /usr/bin/touch
+checking for tr... /usr/bin/tr
+checking for uname... /usr/bin/uname
+checking for wc... /usr/bin/wc
+checking for xargs... /usr/bin/xargs
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for df... /usr/bin/df
+checking for git... /usr/bin/git
+checking for nice... /usr/bin/nice
+checking for greadlink... [not found]
+checking for readlink... /usr/bin/readlink
+checking for cygpath... [not found]
+checking for wslpath... /usr/bin/wslpath
+checking for lsb_release... /usr/bin/lsb_release
+checking for cmd.exe... /mnt/c/Windows/System32/cmd.exe
+checking for cmp... /usr/bin/cmp
+checking for uniq... /usr/bin/uniq
+checking build system type... x86_64-pc-wsl
+checking host system type... x86_64-pc-wsl
+checking target system type... x86_64-pc-wsl
+checking openjdk-build os-cpu... windows-x86_64
+checking openjdk-target os-cpu... windows-x86_64
+checking compilation type... native
+checking Windows environment type... wsl1
+checking wsl1 drive prefix... '/mnt'
+checking wsl1 root directory as Windows path... '[unavailable]'
+checking wsl1 temp directory... /mnt/c/Users/JoseO/AppData/Local/Temp
+checking wsl1 release... 4.4.0-19041-Microsoft
+checking wsl1 version... #1237-Microsoft Sat Sep 11 14:32:00 PST 2021
+checking Windows version... 10.0.19043.2251
+checking wsl distribution... Ubuntu 20.04.5 LTS
+checking what kind of 'find' is first on the PATH... unix style
+checking for top-level directory... /mnt/c/users/joseo/desktop/ece361g-jdk
+checking if custom source is suppressed (openjdk-only)... disabled, default
+checking for --enable-debug... disabled, default
+checking which debug level to use... release
+checking which variants of the JVM to build... server
+checking if absolute paths should be allowed in the build output... no, release build
+checking for sysroot... 
+checking for toolchain path... 
+checking for extra path... 
+checking where to store configuration... in default location
+checking what configuration name to use... windows-x86_64-server-release
+/usr/bin/chmod: changing permissions of '/mnt/c/users/joseo/desktop/ece361g-jdk/build/windows-x86_64-server-release/fixpath': Operation not permitted
+checking for zypper... [not found]
+checking for apt-get... /usr/bin/apt-get
+checking for pandoc... [not found]
+checking for gmake... [not found]
+checking for make... /usr/bin/make
+configure: Testing potential make at /usr/bin/make, found using make in PATH
+configure: Using GNU make at /usr/bin/make (version: GNU Make 4.2.1)
+checking if make --output-sync is supported... yes
+checking for make --output-sync value... none, default
+checking if find supports -delete... yes
+checking what type of tar was found... gnu
+checking that grep (/usr/bin/grep) -Fx handles empty lines in the pattern list correctly... yes
+checking for unzip... /usr/bin/unzip
+checking for zip... /usr/bin/zip
+checking for greadelf... [not found]
+checking for readelf... /usr/bin/readelf
+checking for dot... [not found]
+checking for stat... /usr/bin/stat
+checking for time... time [builtin]
+checking for flock... /usr/bin/flock
+checking for dtrace... [not found]
+checking for gpatch... [not found]
+checking for patch... /usr/bin/patch
+checking if date is a GNU compatible version... yes
+checking bash version... 5.0.17
+checking if bash supports pipefail... yes
+checking if bash supports errexit (-e)... yes
+checking for pkg-config... no
+checking for default LOG value... 
+checking for JMOD compression type... zip-6, default
+checking if packaged modules are kept... enabled, default
+checking for version string... 20-internal-adhoc.jose.ece361g-jdk
+checking for javac... /mnt/c/progra~1/java/jdk-19.0.1/bin/javac.exe
+checking for java... /usr/bin/java
+configure: Could not find a valid Boot JDK. OpenJDK distributions are available at http://jdk.java.net/.
+configure: This might be fixed by explicitly setting --with-boot-jdk
+configure: error: Cannot continue
+configure: Configuration created at Tue Nov  8 18:45:35 CST 2022.
+checking for basename... /usr/bin/basename
+checking for dirname... /usr/bin/dirname
+checking for file... /usr/bin/file
+checking for ldd... /usr/bin/ldd
+checking for bash... /usr/bin/bash
+checking for cat... /usr/bin/cat
+checking for chmod... /usr/bin/chmod
+checking for cp... /usr/bin/cp
+checking for cut... /usr/bin/cut
+checking for date... /usr/bin/date
+checking for gdiff... [not found]
+checking for diff... /usr/bin/diff
+checking for echo... echo [builtin]
+checking for expr... /usr/bin/expr
+checking for find... /usr/bin/find
+checking for gunzip... /usr/bin/gunzip
+checking for pigz... [not found]
+checking for gzip... /usr/bin/gzip
+checking for head... /usr/bin/head
+checking for ln... /usr/bin/ln
+checking for ls... /usr/bin/ls
+checking for gmkdir... [not found]
+checking for mkdir... /usr/bin/mkdir
+checking for mktemp... /usr/bin/mktemp
+checking for mv... /usr/bin/mv
+checking for gawk... /usr/bin/gawk
+checking for printf... printf [builtin]
+checking for rm... /usr/bin/rm
+checking for rmdir... /usr/bin/rmdir
+checking for sh... /usr/bin/sh
+checking for sort... /usr/bin/sort
+checking for tail... /usr/bin/tail
+checking for gtar... [not found]
+checking for tar... /usr/bin/tar
+checking for tee... /usr/bin/tee
+checking for touch... /usr/bin/touch
+checking for tr... /usr/bin/tr
+checking for uname... /usr/bin/uname
+checking for wc... /usr/bin/wc
+checking for xargs... /usr/bin/xargs
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for df... /usr/bin/df
+checking for git... /usr/bin/git
+checking for nice... /usr/bin/nice
+checking for greadlink... [not found]
+checking for readlink... /usr/bin/readlink
+checking for cygpath... [not found]
+checking for wslpath... /usr/bin/wslpath
+checking for lsb_release... /usr/bin/lsb_release
+checking for cmd.exe... /mnt/c/Windows/System32/cmd.exe
+checking for cmp... /usr/bin/cmp
+checking for uniq... /usr/bin/uniq
+checking build system type... x86_64-pc-wsl
+checking host system type... x86_64-pc-wsl
+checking target system type... x86_64-pc-wsl
+checking openjdk-build os-cpu... windows-x86_64
+checking openjdk-target os-cpu... windows-x86_64
+checking compilation type... native
+checking Windows environment type... wsl1
+checking wsl1 drive prefix... '/mnt'
+checking wsl1 root directory as Windows path... '[unavailable]'
+checking wsl1 temp directory... /mnt/c/Users/JoseO/AppData/Local/Temp
+checking wsl1 release... 4.4.0-19041-Microsoft
+checking wsl1 version... #1237-Microsoft Sat Sep 11 14:32:00 PST 2021
+checking Windows version... 10.0.19043.2251
+checking wsl distribution... Ubuntu 20.04.5 LTS
+checking what kind of 'find' is first on the PATH... unix style
+checking for top-level directory... /mnt/c/users/joseo/desktop/ece361g-jdk
+checking if custom source is suppressed (openjdk-only)... disabled, default
+checking for --enable-debug... disabled, default
+checking which debug level to use... release
+checking which variants of the JVM to build... server
+checking if absolute paths should be allowed in the build output... no, release build
+checking for sysroot... 
+checking for toolchain path... 
+checking for extra path... 
+checking where to store configuration... in default location
+checking what configuration name to use... windows-x86_64-server-release
+/usr/bin/chmod: changing permissions of '/mnt/c/users/joseo/desktop/ece361g-jdk/build/windows-x86_64-server-release/fixpath': Operation not permitted
+checking for zypper... [not found]
+checking for apt-get... /usr/bin/apt-get
+checking for pandoc... [not found]
+checking for gmake... [not found]
+checking for make... /usr/bin/make
+configure: Testing potential make at /usr/bin/make, found using make in PATH
+configure: Using GNU make at /usr/bin/make (version: GNU Make 4.2.1)
+checking if make --output-sync is supported... yes
+checking for make --output-sync value... none, default
+checking if find supports -delete... yes
+checking what type of tar was found... gnu
+checking that grep (/usr/bin/grep) -Fx handles empty lines in the pattern list correctly... yes
+checking for unzip... /usr/bin/unzip
+checking for zip... /usr/bin/zip
+checking for greadelf... [not found]
+checking for readelf... /usr/bin/readelf
+checking for dot... [not found]
+checking for stat... /usr/bin/stat
+checking for time... time [builtin]
+checking for flock... /usr/bin/flock
+checking for dtrace... [not found]
+checking for gpatch... [not found]
+checking for patch... /usr/bin/patch
+checking if date is a GNU compatible version... yes
+checking bash version... 5.0.17
+checking if bash supports pipefail... yes
+checking if bash supports errexit (-e)... yes
+checking for pkg-config... no
+checking for default LOG value... 
+checking for JMOD compression type... zip-6, default
+checking if packaged modules are kept... enabled, default
+checking for version string... 20-internal-adhoc.jose.ece361g-jdk
+checking for javac... /usr/bin/javac
+checking for java... /usr/bin/java
+configure: Found potential Boot JDK using java(c) in PATH
+configure: Potential Boot JDK found at /usr is incorrect JDK version (openjdk version "11.0.16" 2022-07-19 OpenJDK Runtime Environment (build 11.0.16+8-post-Ubuntu-0ubuntu120.04) OpenJDK 64-Bit Server VM (build 11.0.16+8-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)); ignoring
+configure: (Your Boot JDK version must be one of: 19 20)
+configure: Could not find a valid Boot JDK. OpenJDK distributions are available at http://jdk.java.net/.
+configure: This might be fixed by explicitly setting --with-boot-jdk
+configure: error: Cannot continue
