@@ -1,0 +1,4 @@
+#!/bin/bash
+./build/linux-x86_64-server-release/jdk/bin/javac ece361g-test/Test.java
+./build/linux-x86_64-server-release/jdk/bin/java ece361g-test/Test
+
