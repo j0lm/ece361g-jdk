@@ -51,7 +51,7 @@ public class Test {
     public static boolean test_two_arrays_same_length() {
         ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
         ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(6, 7, 8, 9, 10));
-        ArrayList<Integer> c = null; // a *** b;
+        ArrayList<Integer> c = a *** b;
         returnvalues.add(c);
 
         return are_arrays_equal(null, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)));
@@ -60,7 +60,7 @@ public class Test {
     public static boolean test_two_arrays_short_normal() {
         ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1));
         ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5));
-        ArrayList<Integer> c = null; // a *** b;
+        ArrayList<Integer> c = a *** b;
         returnvalues.add(c);
 
         return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)));
@@ -69,7 +69,7 @@ public class Test {
     public static boolean test_two_arrays_normal_short() {
         ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
         ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(5));
-        ArrayList<Integer> c = null; // a *** b;
+        ArrayList<Integer> c = a *** b;
         returnvalues.add(c);
 
         return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)));
@@ -78,7 +78,7 @@ public class Test {
     public static boolean test_two_arrays_short_short() {
         ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1));
         ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(2));
-        ArrayList<Integer> c = null; // a *** b;
+        ArrayList<Integer> c = a *** b;
         returnvalues.add(c);
 
         return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2)));
