@@ -379,6 +379,12 @@ public interface Tree {
 
         /**
          * Used for instances of {@link BinaryTree} representing
+         * array list concatenation {@code ***}
+         */
+         AL_CONCATENATION(BinaryTree.class),
+
+        /**
+         * Used for instances of {@link BinaryTree} representing
          * multiplication {@code *}.
          */
         MULTIPLY(BinaryTree.class),

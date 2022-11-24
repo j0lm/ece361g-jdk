@@ -476,6 +476,7 @@ public class TreeInfo {
             case MOD:
             case POSTINC:
             case POSTDEC:
+            case ALCONCAT:
                 return getStartPos(((JCOperatorExpression) tree).getOperand(LEFT));
             case CLASSDEF: {
                 JCClassDecl node = (JCClassDecl)tree;
@@ -588,6 +589,7 @@ public class TreeInfo {
             case COMPL:
             case PREINC:
             case PREDEC:
+            case ALCONCAT:
                 return getEndPos(((JCOperatorExpression) tree).getOperand(RIGHT), endPosTable);
             case CASE:
                 return getEndPos(((JCCase) tree).stats.last(), endPosTable);
@@ -1122,7 +1124,8 @@ public class TreeInfo {
         case MINUS: return addPrec;
         case MUL:
         case DIV:
-        case MOD: return mulPrec;
+        case MOD: 
+        case ALCONCAT: return mulPrec;
         case TYPETEST: return ordPrec;
         default: throw new AssertionError();
         }
@@ -1151,6 +1154,10 @@ public class TreeInfo {
             return Tree.Kind.LOGICAL_COMPLEMENT;
 
         // Binary operators
+
+        // Array List Concatenation
+        case ALCONCAT:
+            return Tree.Kind.AL_CONCATENATION;
 
         // Multiplicative operators
         case MUL:               // *
