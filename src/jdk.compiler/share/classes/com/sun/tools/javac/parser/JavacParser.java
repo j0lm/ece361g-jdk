@@ -4847,6 +4847,8 @@ public class JavacParser implements Parser {
             return MOD_ASG;
         case INSTANCEOF:
             return TYPETEST;
+        case STARSTARSTAR:
+            return ALCONCAT;
         default:
             return NO_TAG;
         }

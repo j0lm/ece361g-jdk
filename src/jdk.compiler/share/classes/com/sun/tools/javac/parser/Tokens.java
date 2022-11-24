@@ -205,7 +205,7 @@ public class Tokens {
         GTGTEQ(">>="),
         GTGTGTEQ(">>>="),
         MONKEYS_AT("@"),
-        ALCONCAT("***"),
+        STARSTARSTAR("***"),
         CUSTOM;
 
         public final String name;
@@ -316,6 +316,9 @@ public class Tokens {
             this.endPos = endPos;
             this.comments = comments;
             checkKind();
+            if (this.kind.toString().equals("***")) {
+                System.out.println("got token ***");
+            }
         }
 
         Token[] split(Tokens tokens) {
