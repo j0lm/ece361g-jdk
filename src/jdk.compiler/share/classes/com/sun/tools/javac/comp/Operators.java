@@ -53,6 +53,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
+import java.util.ArrayList;
 
 import static com.sun.tools.javac.jvm.ByteCodes.*;
 import static com.sun.tools.javac.comp.Operators.OperatorType.*;
@@ -647,6 +648,26 @@ public class Operators {
         }
     }
 
+    class BinaryObjectOperator extends BinaryOperatorHelper {
+        
+        BinaryObjectOperator(Tag tag) {
+            super(tag);
+        }
+
+        @Override
+        public boolean test(Type arg1, Type arg2) {
+            return arg1.isNullOrReference() && arg2.isNullOrReference();
+        }
+
+        @Override
+        public OperatorSymbol resolve(Type t1, Type t2) {
+            // Type t = syms.objectType;
+            // return doLookup(t, t);
+            return doLookup(t1, t2);
+        }
+
+    }
+
     /**
      * Initialize all unary operators.
      */
@@ -800,7 +821,9 @@ public class Operators {
             new BinaryBooleanOperator(Tag.AND)
                     .addBinaryOperator(BOOLEAN, BOOLEAN, BOOLEAN, bool_and),
             new BinaryBooleanOperator(Tag.OR)
-                    .addBinaryOperator(BOOLEAN, BOOLEAN, BOOLEAN, bool_or));
+                    .addBinaryOperator(BOOLEAN, BOOLEAN, BOOLEAN, bool_or),
+            new BinaryObjectOperator(Tag.ALCONCAT)
+                    .addBinaryOperator(OBJECT, OBJECT, OBJECT, nop));
     }
 
     OperatorSymbol lookupBinaryOp(Predicate<OperatorSymbol> applicabilityTest) {
@@ -856,6 +879,7 @@ public class Operators {
         setOperatorName(Tag.MUL, names.asterisk);
         setOperatorName(Tag.DIV, names.slash);
         setOperatorName(Tag.MOD, "%");
+        setOperatorName(Tag.ALCONCAT, "***");
     }
     //where
         private void setOperatorName(Tag tag, String name) {

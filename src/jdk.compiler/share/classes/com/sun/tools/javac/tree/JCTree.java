@@ -351,8 +351,8 @@ public abstract class JCTree implements Tree, Cloneable, DiagnosticPosition {
         MINUS,                           // -
         MUL,                             // *
         DIV,                             // /
-        MOD,                             // %
         ALCONCAT,                        // ***
+        MOD,                             // %
 
         /** Assignment operators, of type Assignop.
          */
