@@ -661,9 +661,9 @@ public class Operators {
 
         @Override
         public OperatorSymbol resolve(Type t1, Type t2) {
-            // Type t = syms.objectType;
-            // return doLookup(t, t);
-            return doLookup(t1, t2);
+            Type t = syms.objectType;
+            return doLookup(t, t);
+            //return doLookup(t1, t2);
         }
 
     }
@@ -823,7 +823,7 @@ public class Operators {
             new BinaryBooleanOperator(Tag.OR)
                     .addBinaryOperator(BOOLEAN, BOOLEAN, BOOLEAN, bool_or),
             new BinaryObjectOperator(Tag.ALCONCAT)
-                    .addBinaryOperator(OBJECT, OBJECT, OBJECT, nop));
+                    .addBinaryOperator(OBJECT, OBJECT, OBJECT, alconcat));
     }
 
     OperatorSymbol lookupBinaryOp(Predicate<OperatorSymbol> applicabilityTest) {

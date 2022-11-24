@@ -269,6 +269,10 @@ public interface ByteCodes {
      */
     int error           = 277;
 
+    /** Virtual opcode for concatenating ArrayLists
+     */
+    int alconcat        = 278;
+
     /** All conditional jumps come in pairs. To streamline the
      *  treatment of jumps, we also introduce a negation of an
      *  unconditional jump. That opcode happens to be jsr.
