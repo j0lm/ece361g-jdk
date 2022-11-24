@@ -205,6 +205,7 @@ public class Tokens {
         GTGTEQ(">>="),
         GTGTGTEQ(">>>="),
         MONKEYS_AT("@"),
+        STARSTAR("**"),
         STARSTARSTAR("***"),
         CUSTOM;
 
