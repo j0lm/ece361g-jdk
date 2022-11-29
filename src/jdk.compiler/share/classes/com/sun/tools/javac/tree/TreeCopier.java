@@ -130,6 +130,14 @@ public class TreeCopier<P> implements TreeVisitor<JCTree,P> {
     }
 
     @DefinedBy(Api.COMPILER_TREE)
+    public JCTree visitALBinary(BinaryTree node, P p) {
+        JCALBinary t = (JCALBinary) node;
+        JCExpression lhs = copy(t.lhs, p);
+        JCExpression rhs = copy(t.rhs, p);
+        return M.at(t.pos).ALBinary(t.getTag(), lhs, rhs);
+    }
+
+    @DefinedBy(Api.COMPILER_TREE)
     public JCTree visitBlock(BlockTree node, P p) {
         JCBlock t = (JCBlock) node;
         List<JCStatement> stats = copy(t.stats, p);

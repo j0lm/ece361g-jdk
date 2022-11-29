@@ -116,6 +116,14 @@ public interface TreeVisitor<R,P> {
     R visitBinary(BinaryTree node, P p);
 
     /**
+     * Visits a ALBinaryTree node.
+     * @param node the node being visited
+     * @param p a parameter value
+     * @return a result value
+     */
+    R visitALBinary(BinaryTree node, P p);
+
+    /**
      * Visits a BlockTree node.
      * @param node the node being visited
      * @param p a parameter value

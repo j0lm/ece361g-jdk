@@ -470,6 +470,13 @@ public class TreeMaker implements JCTree.Factory {
         return tree;
     }
 
+    public JCALBinary ALBinary(JCTree.Tag opcode, JCExpression lhs, JCExpression rhs) {
+        System.out.println("caught from inside TreeMaker.java");
+        JCALBinary tree = new JCALBinary(opcode, lhs, rhs, null);
+        tree.pos = pos;
+        return tree;
+    }
+
     public JCTypeCast TypeCast(JCTree clazz, JCExpression expr) {
         JCTypeCast tree = new JCTypeCast(clazz, expr);
         tree.pos = pos;

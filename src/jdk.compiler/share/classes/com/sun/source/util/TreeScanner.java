@@ -722,7 +722,23 @@ public class TreeScanner<R,P> implements TreeVisitor<R,P> {
         r = scanAndReduce(node.getRightOperand(), p, r);
         return r;
     }
-
+    
+    /**
+     * {@inheritDoc}
+     *
+     * @implSpec This implementation scans the children in left to right order.
+     *
+     * @param node  {@inheritDoc}
+     * @param p  {@inheritDoc}
+     * @return the result of scanning
+     */
+    @Override
+    public R visitALBinary(BinaryTree node, P p) {
+        R r = scan(node.getLeftOperand(), p);
+        r = scanAndReduce(node.getRightOperand(), p, r);
+        return r;
+    }
+    
     /**
      * {@inheritDoc}
      *

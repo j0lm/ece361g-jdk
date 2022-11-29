@@ -1002,9 +1002,16 @@ public class JavacParser implements Parser {
                 odStack[top] = term3();
             }
             while (top > 0 && prec(topOp.kind) >= prec(token.kind)) {
-                odStack[top - 1] = F.at(topOp.pos).Binary(optag(topOp.kind), odStack[top - 1], odStack[top]);
-                top--;
-                topOp = opStack[top];
+                if (topOp.kind.toString().equals("***")) {
+                    System.out.println("caught *** in JavacParser.java");
+                    odStack[top - 1] = F.at(topOp.pos).Binary(optag(topOp.kind), odStack[top - 1], odStack[top]);
+                    top--;
+                    topOp = opStack[top];
+                } else {
+                    odStack[top - 1] = F.at(topOp.pos).Binary(optag(topOp.kind), odStack[top - 1], odStack[top]);
+                    top--;
+                    topOp = opStack[top];
+                }
             }
         }
         Assert.check(top == 0);

@@ -2172,6 +2172,37 @@ public abstract class JCTree implements Tree, Cloneable, DiagnosticPosition {
         }
     }
 
+    public static class JCALBinary extends JCOperatorExpression implements BinaryTree {
+        public JCExpression lhs;
+        public JCExpression rhs;
+        protected JCALBinary(Tag opcode,
+                         JCExpression lhs,
+                         JCExpression rhs,
+                         OperatorSymbol operator) {
+            this.opcode = opcode;
+            this.lhs = lhs;
+            this.rhs = rhs;
+            this.operator = operator;
+        }
+        @Override
+        public void accept(Visitor v) { v.visitALBinary(this); }
+
+        @DefinedBy(Api.COMPILER_TREE)
+        public Kind getKind() { return TreeInfo.tagToKind(getTag()); }
+        @DefinedBy(Api.COMPILER_TREE)
+        public JCExpression getLeftOperand() { return lhs; }
+        @DefinedBy(Api.COMPILER_TREE)
+        public JCExpression getRightOperand() { return rhs; }
+        @Override @DefinedBy(Api.COMPILER_TREE)
+        public <R,D> R accept(TreeVisitor<R,D> v, D d) {
+            return v.visitALBinary(this, d);
+        }
+        @Override
+        public JCExpression getOperand(OperandPos pos) {
+            return pos == OperandPos.LEFT ? lhs : rhs;
+        }
+    }
+
     /**
      * A type cast.
      */
@@ -3440,6 +3471,7 @@ public abstract class JCTree implements Tree, Cloneable, DiagnosticPosition {
         public void visitAssignop(JCAssignOp that)           { visitTree(that); }
         public void visitUnary(JCUnary that)                 { visitTree(that); }
         public void visitBinary(JCBinary that)               { visitTree(that); }
+        public void visitALBinary(JCALBinary that)           { visitTree(that); }
         public void visitTypeCast(JCTypeCast that)           { visitTree(that); }
         public void visitTypeTest(JCInstanceOf that)         { visitTree(that); }
         public void visitBindingPattern(JCBindingPattern that) { visitTree(that); }
