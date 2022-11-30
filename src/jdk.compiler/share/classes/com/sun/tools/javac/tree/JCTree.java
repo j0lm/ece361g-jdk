@@ -2195,6 +2195,7 @@ public abstract class JCTree implements Tree, Cloneable, DiagnosticPosition {
         public JCExpression getRightOperand() { return rhs; }
         @Override @DefinedBy(Api.COMPILER_TREE)
         public <R,D> R accept(TreeVisitor<R,D> v, D d) {
+            System.out.println("caught *** in accept()");
             return v.visitALBinary(this, d);
         }
         @Override
