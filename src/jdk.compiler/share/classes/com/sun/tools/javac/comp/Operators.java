@@ -243,7 +243,8 @@ public class Operators {
         BOOLEAN(syms -> syms.booleanType),
         OBJECT(syms -> syms.objectType),
         STRING(syms -> syms.stringType),
-        BOT(syms -> syms.botType);
+        BOT(syms -> syms.botType),
+        LIST(syms -> syms.listType);
 
         final Function<Symtab, Type> asTypeFunc;
 
@@ -823,7 +824,7 @@ public class Operators {
             new BinaryBooleanOperator(Tag.OR)
                     .addBinaryOperator(BOOLEAN, BOOLEAN, BOOLEAN, bool_or),
             new BinaryObjectOperator(Tag.ALCONCAT)
-                    .addBinaryOperator(OBJECT, OBJECT, OBJECT, alconcat));
+                    .addBinaryOperator(LIST, LIST, LIST, nop));
     }
 
     OperatorSymbol lookupBinaryOp(Predicate<OperatorSymbol> applicabilityTest) {

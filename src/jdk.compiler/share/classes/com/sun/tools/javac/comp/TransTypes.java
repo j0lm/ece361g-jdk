@@ -753,6 +753,10 @@ public class TransTypes extends TreeTranslator {
     }
 
     public void visitBinary(JCBinary tree) {
+        if(tree.getKind() == Kind.AL_CONCATENATION) {
+            result = tree;
+            return;
+        }
         tree.lhs = translate(tree.lhs, tree.operator.type.getParameterTypes().head);
         tree.rhs = translate(tree.rhs, tree.operator.type.getParameterTypes().tail.head);
         result = tree;
