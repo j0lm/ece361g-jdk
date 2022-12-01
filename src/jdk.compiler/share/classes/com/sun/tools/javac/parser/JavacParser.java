@@ -974,6 +974,7 @@ public class JavacParser implements Parser {
             nextToken();
             System.out.println(token.kind.toString());
             JCExpression t2 = term3();
+            System.out.println(token.kind.toString());
             // Create JCExpression that invokes method that will concat the two term3s
             return t;
         }
