@@ -976,6 +976,7 @@ public class JavacParser implements Parser {
             JCExpression t2 = term3();
             System.out.println(token.kind.toString());
             // Create JCExpression that invokes method that will concat the two term3s
+            //JCMemberReference mref = new (ReferenceMode.Invoke, null, );
             return t;
         }
         if ((mode & EXPR) != 0 && prec(token.kind) >= TreeInfo.orPrec) {

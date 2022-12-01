@@ -352,6 +352,27 @@ public class ArrayList<E> extends AbstractList<E>
     }
 
     /**
+     * Returns array consisting of concatenated inputs
+     * 
+     * @param <T> type of elements stored in array
+     * @param al1 array input 1
+     * @param al2 array input 2
+     * 
+     * @return an array with elements of concatenated inputs
+     */
+    @SuppressWarnings("unchecked")
+    public static <T> ArrayList<T> tripstar(ArrayList<T> al1, ArrayList<T> al2) {
+        ArrayList<T> result = new ArrayList<T>();
+        for (T item : al1) {
+            result.add(item);
+        }
+        for (T item : al2) {
+            result.add(item);
+        }
+        return result;
+    }
+
+    /**
      * Returns an array containing all of the elements in this list
      * in proper sequence (from first to last element).
      *

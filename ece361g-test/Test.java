@@ -21,14 +21,17 @@ public class Test {
         testnames.add("test_two_arrays_same_length");
         results.add(test_two_arrays_same_length());
 
-        // testnames.add("test_two_arrays_short_normal");
-        // results.add(test_two_arrays_short_normal());
+        testnames.add("test_two_arrays_short_normal");
+        results.add(test_two_arrays_short_normal());
 
-        // testnames.add("test_two_arrays_normal_short");
-        // results.add(test_two_arrays_normal_short());
+        testnames.add("test_two_arrays_normal_short");
+        results.add(test_two_arrays_normal_short());
 
-        // testnames.add("test_two_arrays_short_short");
-        // results.add(test_two_arrays_short_short());
+        testnames.add("test_two_arrays_short_short");
+        results.add(test_two_arrays_short_short());
+
+        testnames.add("test_arraylist_method");
+        results.add(test_arraylist_method());
 
         // testnames.add("test_two_arrays_same_length_casted");
         // results.add(test_two_arrays_same_length_casted());
@@ -57,35 +60,44 @@ public class Test {
         ArrayList<Integer> c = a *** b;
         returnvalues.add(c);
 
-        return are_arrays_equal(null, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)));
+        return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)));
     }
 
-    // public static boolean test_two_arrays_short_normal() {
-    //     ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1));
-    //     ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5));
-    //     ArrayList<Integer> c = a *** b;
-    //     returnvalues.add(c);
+    public static boolean test_two_arrays_short_normal() {
+        ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1));
+        ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5));
+        ArrayList<Integer> c = a *** b;
+        returnvalues.add(c);
 
-    //     return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)));
-    // }
+        return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)));
+    }
 
-    // public static boolean test_two_arrays_normal_short() {
-    //     ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
-    //     ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(5));
-    //     ArrayList<Integer> c = a *** b;
-    //     returnvalues.add(c);
+    public static boolean test_two_arrays_normal_short() {
+        ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
+        ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(5));
+        ArrayList<Integer> c = a *** b;
+        returnvalues.add(c);
 
-    //     return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)));
-    // }
+        return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)));
+    }
 
-    // public static boolean test_two_arrays_short_short() {
-    //     ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1));
-    //     ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(2));
-    //     ArrayList<Integer> c = a *** b;
-    //     returnvalues.add(c);
+    public static boolean test_two_arrays_short_short() {
+        ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1));
+        ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(2));
+        ArrayList<Integer> c = a *** b;
+        returnvalues.add(c);
 
-    //     return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2)));
-    // }
+        return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2)));
+    }
+
+    public static boolean test_arraylist_method() {
+        ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
+        ArrayList<Integer> b = new ArrayList<Integer>(Arrays.asList(6, 7, 8, 9, 10));
+        ArrayList<Integer> c = ArrayList.tripstar(a, b);
+        returnvalues.add(c);
+
+        return are_arrays_equal(c, new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)));
+    }
 
     // public static boolean test_two_arrays_same_length_casted() {
     //     ArrayList<Integer> a = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
