@@ -768,6 +768,10 @@ public class JavaTokenizer extends UnicodeReader {
                 break;
             }
 
+            if (newtk == TokenKind.STARSTARSTAR) {
+                System.out.println("Caught *** in JavaTokenizer.java");
+            }
+
             tk = newtk;
             next();
 

@@ -318,8 +318,12 @@ public class Tokens {
             this.comments = comments;
             checkKind();
             if (this.kind.toString().equals("***")) {
-                System.out.println("got token ***");
+                System.out.println("caught *** in Tokens.java");
             }
+        }
+
+        boolean isALConcat() {
+            return this.kind.toString().equals("***");
         }
 
         Token[] split(Tokens tokens) {

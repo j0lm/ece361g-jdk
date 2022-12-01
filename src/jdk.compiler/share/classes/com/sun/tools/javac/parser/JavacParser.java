@@ -904,7 +904,7 @@ public class JavacParser implements Parser {
                 int pos = token.pos;
                 nextToken();
                 selectExprMode();
-                JCExpression t1 = term();
+                JCExpression t1 = term(); // RHS of expression >a *** b;
                 return toP(F.at(pos).Assign(t, t1));
             }
             case PLUSEQ:
@@ -967,6 +967,16 @@ public class JavacParser implements Parser {
      */
     JCExpression term2() {
         JCExpression t = term3();
+        if (token.isALConcat()) {
+            System.out.println("caught *** in JavacParser.java.term2()");
+            Token starToken = token;
+            System.out.println(starToken.kind.toString());
+            nextToken();
+            System.out.println(token.kind.toString());
+            JCExpression t2 = term3();
+            // Create JCExpression that invokes method that will concat the two term3s
+            return t;
+        }
         if ((mode & EXPR) != 0 && prec(token.kind) >= TreeInfo.orPrec) {
             selectExprMode();
             return term2Rest(t, TreeInfo.orPrec);
@@ -1036,6 +1046,9 @@ public class JavacParser implements Parser {
                 }
                 odStack[top] = F.at(pos).TypeTest(odStack[top], pattern);
             } else {
+                if (token.toString().equals("***")) {
+                    System.out.println("caught *** in JavacParser.java.term2Rest()");
+                }
                 topOp = token;
                 nextToken();
                 top++;

@@ -824,7 +824,7 @@ public class Operators {
             new BinaryBooleanOperator(Tag.OR)
                     .addBinaryOperator(BOOLEAN, BOOLEAN, BOOLEAN, bool_or),
             new BinaryObjectOperator(Tag.ALCONCAT)
-                    .addBinaryOperator(LIST, LIST, LIST, nop));
+                    .addBinaryOperator(OBJECT, OBJECT, OBJECT, nop));
     }
 
     OperatorSymbol lookupBinaryOp(Predicate<OperatorSymbol> applicabilityTest) {
