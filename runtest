@@ -1,4 +1,6 @@
 #!/bin/bash
 ./build/linux-x86_64-server-release/jdk/bin/javac -Xlint:unchecked ece361g-test/Test.java
-./build/linux-x86_64-server-release/jdk/bin/java ece361g-test/Test
-
+cd ece361g-test
+../build/linux-x86_64-server-release/jdk/bin/java Test
+cd ..
+#END

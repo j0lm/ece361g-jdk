@@ -969,15 +969,31 @@ public class JavacParser implements Parser {
         JCExpression t = term3();
         if (token.isALConcat()) {
             System.out.println("caught *** in JavacParser.java.term2()");
+            System.out.println(token.pos);
             Token starToken = token;
             System.out.println(starToken.kind.toString());
             nextToken();
             System.out.println(token.kind.toString());
+            System.out.println(token.pos);
             JCExpression t2 = term3();
             System.out.println(token.kind.toString());
+
+            // creating method call
+            //Name tripstarName = Name.fromString("ArrayList.tripstar");
+            
+
+            // creating arguments
+            ListBuffer<JCExpression> args = new ListBuffer<JCExpression>();
+            args.add(t);
+            args.add(t2);
+
             // Create JCExpression that invokes method that will concat the two term3s
-            //JCMemberReference mref = new (ReferenceMode.Invoke, null, );
-            return t;
+            // JCMemberReference mref = new JCMemberReference(ReferenceMode.INVOKE, names.tripstar, memberReferenceSuffix(token.pos, t2), args.toList());
+            // return mref;
+
+            //JCMethodInvocation minv = new JCMethodInvocation(null, , args);
+            JCExpression mi = F.at(token.pos).Apply(null, F.at(token.pos).Ident(names.tripstar), args.toList());
+            return mi;
         }
         if ((mode & EXPR) != 0 && prec(token.kind) >= TreeInfo.orPrec) {
             selectExprMode();
